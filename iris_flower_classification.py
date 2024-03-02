@@ -58,3 +58,10 @@ print("f1_score", f1)
 print("Accuracy:", accuracy)
 print("Classification Report:")
 print(classification_report(y_test, y_pred))
+
+# Find indices where predictions match true labels
+correct_indices = np.where(y_pred == y_test)[0]
+
+# Print indices of correct predictions
+print("Indices of correctly classified Iris flowers:")
+print(correct_indices)
